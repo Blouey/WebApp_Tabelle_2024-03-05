@@ -1,0 +1,46 @@
+@using WebApp_Tabelle_2024_03_05.Models
+@model List<Artikel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <title>title</title>
+</head>
+<body>
+<h1>Die HTML-Tabelle im Einsatz</h1>
+
+<table border="1">
+    <tr>
+        <th>AID</th>
+        <th>Bezeichnung</th>
+        <th>Preis</th>
+        <th>vorrätig</th>
+        <th>&nbsp;</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        
+        <tr>
+        <td>@item.Aid</td>
+        <td>@item.Bezeichnung</td>
+        <td>@item.Preis</td>
+        <td>
+           @( item.Bestand>0? "✔️" : "❌" )
+        </td>
+        <td>
+            <a href="/home/details?aid=@item.Aid" title="Details">🔎</a>
+            <a href="/home/edit?aid=@item.Aid" title="Bearbeiten">🖋️</a>
+            <a href="/home/delete?aid=@item.Aid" title="Löschen">🗑️</a>
+        </td>
+        </tr>
+    }
+
+</table>
+
+</body>
+</html>

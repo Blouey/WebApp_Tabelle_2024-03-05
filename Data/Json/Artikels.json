@@ -1,0 +1,44 @@
+[
+  {
+    "Aid": 1010,
+    "Bezeichnung": "Hammer",
+    "Preis": 10.00,
+    "Bestand": 100,
+    "Bild": "hammer.jpg"
+  },
+  {
+    "Aid": 1013,
+    "Bezeichnung": "Nagel",
+    "Preis": 0.35,
+    "Bestand": 1000,
+    "Bild": "nagel.jpg"
+  },
+  {
+    "Aid": 1034,
+    "Bezeichnung": "Zange",
+    "Preis": 20.33,
+    "Bestand": 50,
+    "Bild": "zange.jpg"
+  },
+  {
+    "Aid": 1027,
+    "Bezeichnung": "Schraubendreher",
+    "Preis": 14.98,
+    "Bestand": 75,
+    "Bild": "schraubendreher.jpg"
+  },
+  {
+    "Aid": 1011,
+    "Bezeichnung": "Schraube",
+    "Preis": 0.47,
+    "Bestand": 500,
+    "Bild": "schraube.jpg"
+  },
+  {
+    "Aid": 1062,
+    "Bezeichnung": "Säge",
+    "Preis": 32.49,
+    "Bestand": 0,
+    "Bild": "saege.jpg"
+  }
+]
